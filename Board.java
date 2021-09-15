@@ -9,9 +9,11 @@ import ecs100.*;
 public class Board
 {
     // fields
-    static final int NUM_ROWS = 10;
-    static final int NUM_COLUMNS = 10;
+    static final int NUMROWS = 10;
+    static final int NUMCOLUMNS = 10;
     private Tile board[][];
+    final int NUMSHIPS = 3;
+    
 
     /**
      * Constructor for objects of class Board
@@ -19,7 +21,7 @@ public class Board
     public Board()
     {
         // initialise instance variables
-        board = new Tile[NUM_ROWS][NUM_COLUMNS];
+        board = new Tile[NUMROWS][NUMCOLUMNS];
         this.fillBoard();
     }
     

@@ -51,4 +51,18 @@ public class Tile
     public boolean getShip() {
         return this.ship;   
     }
+    
+    /**
+     * Setter for Ship
+     * 
+     */
+    public boolean setShip() {
+        if(this.ship == false) {
+            this.ship = true;
+        }
+        else{
+            this.ship = false;
+        }
+        return this.ship;
+    }
 }

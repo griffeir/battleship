@@ -1,7 +1,7 @@
 import ecs100.*;
 /**
  * Support class of Board
- * A ship stores how large it is and how many times it has been hit
+ * A ship stores a name, how large it is and how many times it has been hit 
  *
  * @author Ira
  * @version 14/09/21
@@ -9,33 +9,35 @@ import ecs100.*;
 public class Ship
 {
     // fields
-    private int hit; // stores whether ship has been hit
-    private int size; 
+    private String name; // name of the ship
+    private int hitCount; // stores how many times a ship has been hit
+    private int size; // stores the size of the ship
     
 
     /**
      * Constructor for objects of class Ship
      */
-    public Ship(int hit, int size)
+    public Ship(String name, int hitCount, int size)
     {
         // initialise instance variables
-        this. hit = hit;
+        this.name = name;
+        this.hitCount = hitCount;
         this.size = size;
     }
     
     /**
      * Getter for Hit
      * 
-     * @return hit
+     * @return hitCount
      */
-    public int getHit() {
-        return this.hit;   
+    public int getHitCount() {
+        return this.hitCount;   
     }
     
     /**
      * Getter for size
      * 
-     * @return hit
+     * @return size
      */
     public int getSize() {
         return this.size;   
